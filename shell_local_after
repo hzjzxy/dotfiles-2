@@ -1,0 +1,24 @@
+# Homebrew and Related Tools
+export HOMEBREW_NO_ANALYTICS=1
+export HOMEBREW_AUTO_UPDATE_SECS=86400
+
+export JUPYTER_PATH="$HOME/.local/share/jupyter"
+
+# for pipenv
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
+# add pipenv completion
+eval "$(pipenv --completion)"
+
+# for nvm
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}"  ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh"  ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# heroku autocomplete setup
+HEROKU_AC_BASH_SETUP_PATH=/Users/ctjoy/Library/Caches/heroku/autocomplete/bash_setup && test -f $HEROKU_AC_BASH_SETUP_PATH && source $HEROKU_AC_BASH_SETUP_PATH;
+
+# for pyenv and virtualenv
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"

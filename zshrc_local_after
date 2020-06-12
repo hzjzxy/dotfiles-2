@@ -1,0 +1,4 @@
+# Named directories
+hash -d code="$HOME/Documents/code"
+hash -d exceed="$HOME/Documents/code/exceed.ai"
+hash -d rainbow="$HOME/Documents/code/rainbow"

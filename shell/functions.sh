@@ -103,4 +103,12 @@ function extract() {
   fi
 }
 
-
+# add quick open vscode
+vscode ()
+{
+    if [ "$1" == "" ]; then
+        /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code .;
+    else
+        /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code $1;
+    fi
+}

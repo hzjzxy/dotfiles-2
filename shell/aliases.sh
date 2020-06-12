@@ -16,6 +16,7 @@ alias tml="tmux list-sessions"
 alias tma="tmux attach-session"
 alias tmc="clear && tmux clear-history"
 alias tmk="tmux kill-session"
+alias tmna="tmux rename-session"
 alias ltm="if tmux has; then tmux attach; else tmux new; fi"
 
 # cd to git root directory

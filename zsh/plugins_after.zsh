@@ -19,7 +19,7 @@ source ~/.zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.
 source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # key binding for auto suggestion
-bindkey '^ ' autosuggest-accept
+bindkey '^O' autosuggest-accept
 
 # bind UP DOWN for history search
 bindkey '^[[A' history-substring-search-up

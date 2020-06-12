@@ -8,8 +8,10 @@
 - link:
     ~/.shell:
     ~/.shell_local_before:
+    ~/.shell_local_after:
     ~/.zsh:
     ~/.zshrc:
+    ~/.zshrc_local_after:
     ~/.bash:
     ~/.bashrc:
     ~/.bash_profile:
@@ -30,9 +32,5 @@
   - git submodule sync --recursive
   # the following have to run after linking ~/.gitconfig
   - git update-submodules
-  - >
-    git cleanall -f
-    jupyter/nbextensions/
-    shell/plugins/
-    zsh/plugins/
-    vim/pack/vendor/start/
+  - ./setup
+  - ./macos

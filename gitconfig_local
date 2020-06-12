@@ -1,9 +1,2 @@
-[user]
-  name = Joy Chen
-  email = ctjoychen@gmail.com
-
-[github]
-	user = ctjoy
-
 [credential]
   helper = osxkeychain
