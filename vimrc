@@ -42,7 +42,6 @@ map <C-a> <Nop>
 " " Plugin 'davidhalter/jedi-vim'
 " Plugin 'hynek/vim-python-pep8-indent'
 " Plugin 'hdima/python-syntax'
-" " Plugin 'vim-syntastic/syntastic'
 "
 " " Syntax color and indent
 " Plugin 'othree/yajs.vim'
@@ -103,26 +102,27 @@ endif
 
 
 " " vim syntastic
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_mode_map = {
-    \ 'mode': 'passive',
-    \ 'active_filetypes': [],
-    \ 'passive_filetypes': []
-\}
-nnoremap <Leader>s :SyntasticCheck<CR>
-nnoremap <Leader>r :SyntasticReset<CR>
-nnoremap <Leader>i :SyntasticInfo<CR>
-nnoremap <Leader>m :SyntasticToggleMode<CR>
-" set statusline+=%#warningmsg#
-" set statusline+=%{SyntasticStatuslineFlag()}
-" set statusline+=%*
-"
 " let g:syntastic_always_populate_loc_list = 1
 " let g:syntastic_auto_loc_list = 1
-" let g:syntastic_check_on_open = 1
 " let g:syntastic_check_on_wq = 0
+" let g:syntastic_mode_map = {
+"     \ 'mode': 'passive',
+"     \ 'active_filetypes': [],
+"     \ 'passive_filetypes': []
+" \}
+" nnoremap <Leader>s :SyntasticCheck<CR>
+" nnoremap <Leader>r :SyntasticReset<CR>
+" nnoremap <Leader>i :SyntasticInfo<CR>
+" nnoremap <Leader>m :SyntasticToggleMode<CR>
+" vim syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 " let g:syntastic_javascript_checkers = ['eslint']
 " let g:syntastic_javascript_eslint_exe = 'npm run lint --'
 " let g:syntastic_python_checkers = ['pylint']
