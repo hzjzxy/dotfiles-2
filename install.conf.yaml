@@ -26,6 +26,7 @@
     ~/.ipython/profile_default/startup/disable_warnings.py: ipython/disable_warnings.py
     ~/.jupyter/nbconfig/notebook.json: jupyter/notebook.json
     ~/.local/share/jupyter/nbextensions: jupyter/nbextensions
+    ~/.ssh/config: ssh/config
     ~/.pythonrc:
     ~/.inputrc:
 

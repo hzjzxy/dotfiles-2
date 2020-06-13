@@ -1,0 +1,10 @@
+Host *
+    ServerAliveInterval 120
+    UseKeychain yes
+    AddKeysToAgent yes
+
+# digital ocean
+
+Host openvpn
+    User ctjoy
+    Hostname 206.189.38.124
