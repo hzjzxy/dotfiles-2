@@ -42,7 +42,6 @@ map <C-a> <Nop>
 " " Plugin 'davidhalter/jedi-vim'
 " Plugin 'hynek/vim-python-pep8-indent'
 " Plugin 'hdima/python-syntax'
-" " Plugin 'ambv/black', {'rtp': 'vim/bundle'}
 " " Plugin 'vim-syntastic/syntastic'
 "
 " " Syntax color and indent
@@ -131,12 +130,12 @@ nnoremap <Leader>m :SyntasticToggleMode<CR>
 " highlight link SyntasticError ErrorMsg
 " highlight link SyntasticErrorSign WarningMsg
 "
-" " vim python black formatter
-" " nnoremap <Leader>ff :Black<CR>
-" " "auto format when close the file
-" " autocmd BufWritePre *.py execute ':Black' 
-" " let g:black_linelength = 120
-"
+" vim python black formatter
+nnoremap <Leader>b :Black<CR>
+"auto format when close the file
+autocmd BufWritePre *.py execute ':Black' 
+let g:black_linelength = 120
+
 " " vim python jedi
 " let g:jedi#usages_command = ""
 
