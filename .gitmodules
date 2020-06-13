@@ -83,3 +83,6 @@
 [submodule "shell/plugins/diff-so-fancy"]
 	path = shell/plugins/diff-so-fancy
 	url = https://github.com/so-fancy/diff-so-fancy
+[submodule "vim/pack/vendor/start/vim-fugitive"]
+	path = vim/pack/vendor/start/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive

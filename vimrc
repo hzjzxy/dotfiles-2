@@ -214,14 +214,21 @@ set smartindent
 set backspace=indent,eol,start " allow backspacing over everything
 set nojoinspaces " suppress inserting two spaces between sentences
 set smarttab
-
-" use 4 spaces instead of tabs during formatting
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
 set expandtab
-set autoindent
 set fileformat=unix
+
+" use 2 spaces instead of tabs during formatting
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+
+" use 4 spaces instead of tabs during formating when using python
+autocmd BufNewFile,BufRead *.py call SetPythonFileIndent()
+function SetPythonFileIndent()
+  set tabstop=4
+  set softtabstop=4
+  set shiftwidth=4
+endfunction
 
 " Linebreak on 500 characters
 set linebreak
