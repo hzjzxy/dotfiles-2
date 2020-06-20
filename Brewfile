@@ -3,11 +3,11 @@ tap 'homebrew/cask'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'heroku/brew'
+tap 'universal-ctags/universal-ctags'
 
 # Binaries
 brew 'coreutils' # Those that come with macOS are outdated
 brew 'vim'
-brew 'ctags'
 brew 'grip'
 brew 'httpie'
 brew 'openvpn-connect'
@@ -16,6 +16,7 @@ brew 'tree'
 brew 'wget'
 brew 'osx-cup-temp'
 brew 'glances'
+brew '--with-jansson --HEAD universal-ctags/universal-ctags/universal-ctags'
 
 # Development
 brew 'python'
