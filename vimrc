@@ -97,7 +97,8 @@ if has('python3')
 endif
 
 " vim prettier
-" Allow auto formatting for files without @format or @prettier tag
+nmap <Leader>p <Plug>(Prettier)
+let g:prettier#autoformat = 1
 let g:prettier#autoformat_require_pragma = 0
 
 " let g:jsx_ext_required = 0 " enable .js file syntax
