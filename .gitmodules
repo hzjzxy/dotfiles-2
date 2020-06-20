@@ -98,3 +98,12 @@
 [submodule "vim/pack/vendor/start/vim-buftabline"]
 	path = vim/pack/vendor/start/vim-buftabline
 	url = https://github.com/ap/vim-buftabline
+[submodule "vim/pack/vendor/start/vim-javascript"]
+	path = vim/pack/vendor/start/vim-javascript
+	url = https://github.com/pangloss/vim-javascript
+[submodule "vim/pack/vendor/start/vim-jsx-pretty"]
+	path = vim/pack/vendor/start/vim-jsx-pretty
+	url = https://github.com/MaxMEllon/vim-jsx-pretty
+[submodule "vim/pack/vendor/start/vim-css-color"]
+	path = vim/pack/vendor/start/vim-css-color
+	url = https://github.com/ap/vim-css-color

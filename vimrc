@@ -45,9 +45,6 @@ packloadall
 " Plugin 'hdima/python-syntax'
 "
 " " Syntax color and indent
-" Plugin 'othree/yajs.vim'
-" Plugin 'gavocanov/vim-js-indent'
-" Plugin 'mxw/vim-jsx'
 " Plugin 'cakebaker/scss-syntax.vim'
 " Plugin 'ap/vim-css-color'
 
@@ -101,11 +98,20 @@ nmap <Leader>p <Plug>(Prettier)
 let g:prettier#autoformat = 1
 let g:prettier#autoformat_require_pragma = 0
 
-" let g:jsx_ext_required = 0 " enable .js file syntax
-"
+" vim jsx pretty work with vim javascript
+let g:vim_jsx_pretty_colorful_config = 1 " default 0
+
+" vim python black formatter
+nnoremap <Leader>b :Black<CR>
+"auto format when close the file
+autocmd BufWritePre *.py execute ':Black' 
+let g:black_linelength = 120
+
 " " python-syntax Plugin
 " let python_highlight_all = 1
-
+"
+" " vim python jedi
+" let g:jedi#usages_command = ""
 
 " " vim syntastic
 " let g:syntastic_always_populate_loc_list = 1
@@ -135,15 +141,6 @@ let g:syntastic_check_on_wq = 0
 "
 " highlight link SyntasticError ErrorMsg
 " highlight link SyntasticErrorSign WarningMsg
-"
-" vim python black formatter
-nnoremap <Leader>b :Black<CR>
-"auto format when close the file
-autocmd BufWritePre *.py execute ':Black' 
-let g:black_linelength = 120
-
-" " vim python jedi
-" let g:jedi#usages_command = ""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Editing mappings
