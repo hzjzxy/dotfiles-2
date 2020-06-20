@@ -35,6 +35,7 @@ set mouse+=a " enable mouse mode (scrolling, selection, etc)
 set noerrorbells visualbell t_vb=
 " unbind keys
 map <C-a> <Nop>
+packloadall
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vundle and Plugin
@@ -94,6 +95,10 @@ nnoremap <Leader>u :GundoToggle<CR>
 if has('python3')
   let g:gundo_prefer_python3 = 1
 endif
+
+" vim prettier
+" Allow auto formatting for files without @format or @prettier tag
+let g:prettier#autoformat_require_pragma = 0
 
 " let g:jsx_ext_required = 0 " enable .js file syntax
 "

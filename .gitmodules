@@ -86,3 +86,6 @@
 [submodule "vim/pack/vendor/start/vim-fugitive"]
 	path = vim/pack/vendor/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
+[submodule "vim/pack/vendor/start/vim-prettier"]
+	path = vim/pack/vendor/start/vim-prettier
+	url = https://github.com/prettier/vim-prettier
