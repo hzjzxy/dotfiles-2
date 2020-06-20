@@ -29,7 +29,9 @@ bindkey '^[[B' history-substring-search-down
 bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 
-# zsh vim
+# zsh nvm
+export NVM_COMPLETION=true
+export NVM_LAZY_LOAD=true
 source ~/.zsh/plugins/zsh-nvm/zsh-nvm.plugin.zsh
 
 # zsh better npm completion
