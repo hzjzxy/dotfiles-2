@@ -30,7 +30,7 @@ bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 
 # zsh vim
-source ~/.zsh-nvm/zsh-nvm.plugin.zsh
+source ~/.zsh/plugin/zsh-nvm/zsh-nvm.plugin.zsh
 
 # zsh better npm completion
-source ~/.zsh-better-npm-completion/zsh-better-npm-completion.plugin.zsh
+source ~/.zsh/plugin/zsh-better-npm-completion/zsh-better-npm-completion.plugin.zsh
