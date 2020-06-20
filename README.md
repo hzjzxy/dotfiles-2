@@ -195,7 +195,7 @@ Your Mac is now ready to use!
 #### vim prettier
 * `<Leader>p` format file
 
-#### tagbar
+#### vim vista
 * `<Leader>tt` show functions and tags
 
 #### vim signature

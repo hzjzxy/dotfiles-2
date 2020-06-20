@@ -26,9 +26,6 @@
 [submodule "vim/pack/vendor/start/base16-vim"]
 	path = vim/pack/vendor/start/base16-vim
 	url = https://github.com/chriskempson/base16-vim
-[submodule "vim/pack/vendor/start/tagbar"]
-	path = vim/pack/vendor/start/tagbar
-	url = https://github.com/majutsushi/tagbar
 [submodule "vim/pack/vendor/start/nerdtree"]
 	path = vim/pack/vendor/start/nerdtree
 	url = https://github.com/preservim/nerdtree
@@ -107,3 +104,6 @@
 [submodule "vim/pack/vendor/start/vim-css-color"]
 	path = vim/pack/vendor/start/vim-css-color
 	url = https://github.com/ap/vim-css-color
+[submodule "vim/pack/vendor/start/vista.vim"]
+	path = vim/pack/vendor/start/vista.vim
+	url = https://github.com/liuchengxu/vista.vim

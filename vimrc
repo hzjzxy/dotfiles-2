@@ -81,9 +81,6 @@ let g:EasyMotion_use_smartsign_us = 1
 " vim-gitgutter Plugin
 set updatetime=100
 
-" vim tagbar
-map <Leader>tt :TagbarToggle<CR>
-
 " T-Comment Plugin, fast shortcut for commenting
 map <leader>c <c-_><c-_>
 
@@ -92,6 +89,9 @@ nnoremap <Leader>u :GundoToggle<CR>
 if has('python3')
   let g:gundo_prefer_python3 = 1
 endif
+
+" vim vista
+nnoremap <Leader>tt :Vista!!<CR>
 
 " vim prettier
 nmap <Leader>p <Plug>(Prettier)
