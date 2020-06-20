@@ -92,6 +92,7 @@ endif
 
 " vim vista
 nnoremap <Leader>tt :Vista!!<CR>
+let g:vista#renderer#enable_icon = 0
 
 " vim prettier
 nmap <Leader>p <Plug>(Prettier)
