@@ -22,6 +22,7 @@ brew '--with-jansson --HEAD universal-ctags/universal-ctags/universal-ctags'
 brew 'python'
 brew 'pyenv'
 brew 'pyenv-virtualenv'
+brew 'pipenv'
 brew 'heroku'
 
 # Font
