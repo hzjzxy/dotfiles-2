@@ -7,7 +7,6 @@
 "
 " Sections:
 "    -> General
-"    -> Vundle and Plugin
 "    -> Plugin setup
 "    -> Editing mappings
 "    -> VIM user interface
@@ -36,17 +35,6 @@ set noerrorbells visualbell t_vb=
 " unbind keys
 map <C-a> <Nop>
 packloadall
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Vundle and Plugin
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" " Plugin 'davidhalter/jedi-vim'
-" Plugin 'hynek/vim-python-pep8-indent'
-" Plugin 'hdima/python-syntax'
-"
-" " Syntax color and indent
-" Plugin 'cakebaker/scss-syntax.vim'
-" Plugin 'ap/vim-css-color'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugin setup
@@ -91,7 +79,7 @@ if has('python3')
 endif
 
 " vim vista
-nnoremap <Leader>tt :Vista!!<CR>
+nnoremap <Leader>v :Vista!!<CR>
 let g:vista#renderer#enable_icon = 0
 
 " vim prettier
@@ -107,12 +95,6 @@ nnoremap <Leader>b :Black<CR>
 "auto format when close the file
 autocmd BufWritePre *.py execute ':Black' 
 let g:black_linelength = 120
-
-" " python-syntax Plugin
-" let python_highlight_all = 1
-"
-" " vim python jedi
-" let g:jedi#usages_command = ""
 
 " " vim syntastic
 " let g:syntastic_always_populate_loc_list = 1
@@ -225,14 +207,6 @@ set fileformat=unix
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
-
-" use 4 spaces instead of tabs during formating when using python
-autocmd BufNewFile,BufRead *.py call SetPythonFileIndent()
-function SetPythonFileIndent()
-  set tabstop=4
-  set softtabstop=4
-  set shiftwidth=4
-endfunction
 
 " Linebreak on 500 characters
 set linebreak

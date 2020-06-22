@@ -196,7 +196,7 @@ Your Mac is now ready to use!
 * `<Leader>p` format file
 
 #### vim vista
-* `<Leader>tt` show functions and tags
+* `<Leader>v` show functions and tags
 
 #### vim signature
 * `mx`           Toggle mark 'x' and display it in the leftmost column
