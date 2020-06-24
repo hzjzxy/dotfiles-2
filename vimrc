@@ -12,6 +12,7 @@
 "    -> VIM user interface
 "    -> Colors and Fonts
 "    -> Files and backups
+"    -> Fold
 "    -> Text, tab and indent related
 "    -> Moving around, tabs and buffers
 "    -> Status line
@@ -190,6 +191,14 @@ set fileformats=unix,dos,mac
 set nobackup
 set nowritebackup
 set noswapfile
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Fold
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set foldmethod=indent
+set foldnestmax=10
+set nofoldenable
+set foldlevel=2
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
