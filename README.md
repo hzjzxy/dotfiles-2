@@ -175,9 +175,9 @@ Your Mac is now ready to use!
 * `;` 開啟 ctrlp 模糊查詢
 
 ##### Once CtrlP is open:
-* Press <c-f> and <c-b> to cycle between modes.
-* Use <c-j>, <c-k> or the arrow keys to navigate the result list.
-* Use <c-t> or <c-v>, <c-x> to open the selected entry in a new tab or in a new split.
+* Press `<Ctrl-f>` and `<Ctrl-b>` to cycle between modes.
+* Use `<Ctrl-j>`, `<Ctrl-k>` or the arrow keys to navigate the result list.
+* Use `<Ctrl-t>` or `<Ctrl-v>`, `<Ctrl-x>` to open the selected entry in a new tab or in a new split.
 
 #### vim gitgutter
 * `[c` 跳到上一個 hunk
