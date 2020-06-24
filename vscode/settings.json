@@ -1,0 +1,121 @@
+{
+  // Theme Setup.
+  "workbench.colorTheme": "Nord",
+  // Controls if file decorations should use badges.
+  "explorer.decorations.badges": false,
+  "workbench.iconTheme": "vscode-icons",
+  "editor.fontFamily": "Operator Mono, Fira Code, Menlo, Monaco, 'Courier New', monospace",
+  "terminal.integrated.fontFamily": "'Operator Mono', 'Fira Code', 'Inconsolata for Powerline', monospace",
+  "editor.fontSize": 13,
+  "editor.lineHeight": 24,
+  "editor.letterSpacing": 0.5,
+  "editor.fontWeight": "400",
+  "editor.fontLigatures": true,
+  "editor.cursorStyle": "line",
+  "editor.cursorWidth": 5,
+  "editor.cursorBlinking": "solid",
+  "editor.renderWhitespace": "all",
+  "editor.snippetSuggestions": "top",
+  "workbench.startupEditor": "readme",
+  "editor.glyphMargin": true,
+  "workbench.editor.enablePreview": false,
+  "explorer.confirmDragAndDrop": false,
+  "window.zoomLevel": 0,
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+  // Formatting Optional.
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "eslint.run": "onType",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  // MacOS Only Settings.
+  "workbench.fontAliasing": "auto",
+  "terminal.integrated.macOptionIsMeta": true,
+  // The default syntax (TextMate) highlighter classifies many tokens as variables and these are now (since VSCode 1.43) resolved into namespaces, classes, parameters, and so on. This is called Semantic highlighting support for TypeScript and JavaScript. But many themes and language extensions seem broken with single-colored syntax. This came as a surprise to me. It's set `true` by default. I recommend disabling this for now.
+  "editor.semanticHighlighting.enabled": false,
+  // Other setting
+  "editor.tabCompletion": "on",
+  "editor.suggestSelection": "recentlyUsedByPrefix",
+  "breadcrumbs.enabled": true,
+  "files.autoGuessEncoding": true,
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true,
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.vscode": true,
+    "**/node_modules": true
+  },
+  // gitlen setting
+  "gitlens.hovers.currentLine.over": "line",
+  // javascript setting
+  "javascript.implicitProjectConfig.experimentalDecorators": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  // python setting
+  "python.formatting.provider": "black",
+  "python.formatting.blackArgs": ["[\"--line-length\", \"120\"]"],
+  "python.languageServer": "Microsoft",
+  // vim setting
+  "vim.easymotion": true,
+  "vim.easymotionMarkerFontFamily": "Operator Mono, Fira Code, Menlo, Monaco, 'Courier New', monospace",
+  "vim.easymotionMarkerFontSize": "13",
+  "vim.easymotionMarkerFontWeight": "400",
+  "vim.easymotionMarkerHeight": 24,
+  "vim.sneak": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.leader": ",",
+  "vim.foldfix": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["0"],
+      "commands": ["cursorHome"]
+    },
+    {
+      "before": ["9"],
+      "commands": ["cursorEnd"]
+    },
+    {
+      "before": [";"], // like ctrl-p plugin in vim
+      "commands": ["workbench.action.gotoSymbol"]
+    },
+    {
+      "before": [":"],
+      "commands": ["workbench.action.showCommands"]
+    },
+    {
+      "before": ["<leader>", "b"],
+      "commands": ["bookmarks.list"]
+    },
+    {
+      "before": [" "], // map <space> as easymotion start of word
+      "after": ["leader", "leader", "leader", "b", "d", "w"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    },
+    {
+      "before": ["p"],
+      "after": ["p", "g", "v", "y"]
+    }
+  ]
+}

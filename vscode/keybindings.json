@@ -1,0 +1,115 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+  {
+    "key": ", d",
+    "command": "editor.action.peekDefinition",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor && vim.mode != 'Insert'"
+  },
+  {
+    "key": ", r",
+    "command": "editor.action.referenceSearch.trigger",
+    "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor && vim.mode != 'Insert'"
+  },
+  {
+    "key": "alt+cmd+k",
+    "command": "bookmarks.jumpToPrevious",
+    "when": "editorTextFocus && vim.mode != 'Insert'"
+  },
+  {
+    "key": "alt+cmd+j",
+    "command": "-bookmarks.jumpToPrevious",
+    "when": "editorTextFocus && vim.mode != 'Insert'"
+  },
+  {
+    "key": "alt+cmd+j",
+    "command": "bookmarks.jumpToNext",
+    "when": "editorTextFocus && vim.mode != 'Insert'"
+  },
+  {
+    "key": "alt+cmd+l",
+    "command": "-bookmarks.jumpToNext",
+    "when": "editorTextFocus && vim.mode != 'Insert'"
+  },
+  {
+    "key": ", m",
+    "command": "bookmarks.toggle",
+    "when": "editorTextFocus && vim.mode != 'Insert'"
+  },
+  {
+    "key": "alt+cmd+k",
+    "command": "-bookmarks.toggle",
+    "when": "editorTextFocus && vim.mode != 'Insert'"
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "cmd+b",
+    "command": "-workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": ", n",
+    "command": "workbench.view.explorer",
+    "when": "vim.mode != 'Insert'"
+  },
+  {
+    "key": "shift+cmd+e",
+    "command": "-workbench.view.explorer",
+    "when": "vim.mode != 'Insert'"
+  },
+  {
+    "key": "ctrl+a c",
+    "command": "workbench.action.terminal.new"
+  },
+  {
+    "key": "ctrl+shift+`",
+    "command": "-workbench.action.terminal.new"
+  },
+  {
+    "key": "o",
+    "command": "filesExplorer.openFilePreserveFocus",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsFolder && !inputFocus"
+  },
+  {
+    "key": "space",
+    "command": "-filesExplorer.openFilePreserveFocus",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsFolder && !inputFocus"
+  },
+  {
+    "key": ", q",
+    "command": "workbench.action.closeActiveEditor",
+    "when": "vim.mode != 'Insert'"
+  },
+  {
+    "key": "cmd+w",
+    "command": "-workbench.action.closeActiveEditor",
+    "when": "editorTextFocus && vim.mode != 'Insert'"
+  },
+  {
+    "key": ", w",
+    "command": "workbench.action.files.save",
+    "when": "editorTextFocus && vim.mode != 'Insert'"
+  },
+  {
+    "key": "cmd+s",
+    "command": "-workbench.action.files.save",
+    "when": "editorTextFocus && vim.mode != 'Insert'"
+  },
+  {
+    "key": ", b",
+    "command": "bookmarks.list",
+    "when": "editorTextFocus && vim.mode != 'Insert'"
+  },
+  {
+    "key": ", p",
+    "command": "markdown.showPreview",
+    "when": "editorLangId == 'markdown'"
+  },
+  {
+    "key": "shift+cmd+v",
+    "command": "-markdown.showPreview",
+    "when": "editorLangId == 'markdown'"
+  }
+]
